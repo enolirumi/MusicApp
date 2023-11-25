@@ -38,7 +38,7 @@ main .content .banner-image>div {
 }
 
 main .content .banner-image img {
-    width: 400px;
+    max-width: 400px;
     transform: translateX(-30%);
 }
 
@@ -106,13 +106,28 @@ main .content .banner-image img {
 
 .motivations-section .banner-img {
     width: 100%;
-    border: solid white 2px;
+    /* border: solid white 2px; */
     border-radius: 20px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 40%) !important;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    -webkit-box-shadow: 0px 29px 42px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 29px 42px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 29px 42px 0px rgba(0, 0, 0, 0.6);
 }
 
 .motivations-section .content {
     width: 100%;
-    border: 2px solid white;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 40%) !important;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    -webkit-box-shadow: 0px 29px 42px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 29px 42px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 29px 42px 0px rgba(0, 0, 0, 0.6);
 }
 
 .original-position {
@@ -127,6 +142,17 @@ main .content .banner-image img {
 
     main .content .banner-image>div {
         transform: translateX(15%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main .content .banner-image>div {
+        width: 150px;
+    }
+    
+    main .content .banner-image img {
+        max-width: 200px;
+        transform: translateX(-30%);
     }
 }
 
