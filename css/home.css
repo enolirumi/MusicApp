@@ -100,6 +100,25 @@ main .content .banner-image img {
     filter: invert(0);
 }
 
+.motivations-section {
+    margin-top: 70px;
+}
+
+.motivations-section .banner-img {
+    width: 100%;
+    border: solid white 2px;
+    border-radius: 20px;
+}
+
+.motivations-section .content {
+    width: 100%;
+    border: 2px solid white;
+}
+
+.original-position {
+    transform: translate(0, 0);
+}
+
 
 @media screen and (max-width: 992px) {
     main .content {

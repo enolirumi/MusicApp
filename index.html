@@ -4,29 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/logo.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/home.css">
-    <title>Document</title>
+    <title>MusicApp</title>
 </head>
 
 <body>
-    <div class="w-100 d-flex d-block d-lg-none mb-5 mx-5"><img src="./src/images/logo.png" style="width: 150px;" alt=""></div>
+    <div class="w-100 d-flex d-block d-lg-none mb-5 mx-5"><img src="./src/images/logo.png" style="width: 150px;" alt="" data-animation="top"></div>
     <div class="open-navbar-mobile-btn d-block d-lg-none close"></div>
     <header class="close">
         <div>
-            <a href="javascript:void(0)"><img src="./src/images/logo.png" alt=""></a>
+            <a href="javascript:void(0)"><img src="./src/images/logo.png" data-animation="top" alt=""></a>
         </div>
         <nav>
-            <ul>
+            <ul data-animation="top" data-animation-delay="200">
                 <li class="actual-page"><a href="javascript:void(0)" class="a-reset">Home</a></li>
                 <li><a href="javascript:void(0)" class="a-reset">About us</a></li>
                 <li><a href="javascript:void(0)" class="a-reset">The app</a></li>
             </ul>
         </nav>
-        <a href="javascript:void(0)" class="call-to-action-btn a-reset">
+        <a href="javascript:void(0)" class="call-to-action-btn a-reset" data-animation="top" data-animation-delay="3000">
             Get Started
         </a>
     </header>
@@ -37,42 +38,76 @@
         <div class="content d-flex flex-wrap-reverse">
             <div class="col-12 col-lg-6 p-3 d-flex flex-column justify-content-between">
                 <div>
-                    <div class="display-3 my-5 my-lg-0">
-                        <span class="gradient-text fw-bold">MusicApp</span>, a new way to listen the best of your songs
+                    <div class="display-3 my-5 my-lg-0" data-animation="left" data-animation-delay="600">
+                        <span data-animation="fade" data-animation-delay="1200"><span class="gradient-text fw-bold">MusicApp</span></span>, a new way to listen the best of your songs
                     </div>
-                    <div class="fs-4 mt-3 my-5 my-lg-0 mt-lg-4">
+                    <div class="fs-4 mt-3 my-5 my-lg-0 mt-lg-4" data-animation="left" data-animation-delay="800">
                         Come enjoy our app with the first month free for new users!
                     </div>
                 </div>
                 <div class="w-100 d-flex align-items-center justify-content-center my-5 my-lg-0">
-                    <a href="javascript:void(0)" class="call-to-action-btn a-reset">
+                    <a href="javascript:void(0)" class="call-to-action-btn a-reset" data-animation="bottom" data-animation-delay="2400">
                         Try now!
                     </a>
                 </div>
             </div>
             <div class="banner-image d-flex justify-content-center align-items-center col-12 col-lg-6 p-3">
-                <div>
+                <div data-animation="right" data-animation-delay="1500">
                     <img src="./src/images/Default_a_woman_with_a_headphones_in_music_vibe_and_with_a_whi_1_18c4c81e-3c7d-4e63-b55e-28978ea8b0a3_0.png"
-                        alt="">
+                        alt="" data-animation="fade" data-animation-delay="1800">
                 </div>
             </div>
         </div>
     </main>
     <section>
-        <div id="partners-swiper" class="swiper">
+        <div id="partners-swiper" class="swiper" data-animation="bottom" data-animation-delay="2000">
             <div class="swiper-wrapper">
                 <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Spotify_white.png" alt=""></div>
                 <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Google_white.png" alt=""></div>
-                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Cotemig_White.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/AppStore_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/GooglePlay_white.png" alt=""></div>
                 <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Spotify_white.png" alt=""></div>
                 <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Google_white.png" alt=""></div>
-                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Spotify_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/AppStore_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/GooglePlay_white.png" alt=""></div>
                 <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Google_white.png" alt=""></div>
-                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Cotemig_White.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/AppStore_white.png" alt=""></div>
             </div>
         </div>
     </section>
 
+    <section class="motivations-section d-flex flex-column">
+        <div class="d-flex flex-wrap">
+            <div class="col-12 pe-0 pe-lg-5 col-lg-10">
+                <div class="content glass-bg p-5 h-100" data-animation="left">
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <img src="./src/images/Default_white_man_listening_music_with_headphones_happy_vibing_3_11800f88-6c17-4a1b-8f98-b057264da771_1.jpg" data-animation="right" class="banner-img" alt="">
+            </div>
+        </div>
+        <div class="d-flex flex-wrap mt-5">
+            <div class="col-12 col-lg-2">
+                <img src="./src/images/Default_redhaired_white_girl_listening_music_with_headphones_h_2_64b10fa0-634f-4140-855e-479c287848ce_1.jpg" data-animation="left" class="banner-img" alt="">
+            </div>
+            <div class="col-12 ps-0 ps-lg-5 col-lg-10">
+                <div class="content glass-bg p-5 h-100" data-animation="right">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap mt-5">
+            <div class="col-12 pe-0 pe-lg-5 col-lg-10">
+                <div class="content glass-bg p-5 h-100" data-animation="left">
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <img src="./src/images/Default_a_group_of_people_lia_group_of_people_listening_music_0_b1bb56fe-b6b8-44e4-9d0f-7fc2acb24881_1.jpg" data-animation="right" class="banner-img" alt="">
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
