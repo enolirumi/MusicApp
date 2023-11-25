@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-100 d-flex d-block d-lg-none mb-5 mx-5"><img src="./src/images/logo.png" style="width: 150px;" alt=""></div>
+    <div class="open-navbar-mobile-btn d-block d-lg-none close"></div>
+    <header class="close">
+        <div>
+            <a href="javascript:void(0)"><img src="./src/images/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="actual-page"><a href="javascript:void(0)" class="a-reset">Home</a></li>
+                <li><a href="javascript:void(0)" class="a-reset">About us</a></li>
+                <li><a href="javascript:void(0)" class="a-reset">The app</a></li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0)" class="call-to-action-btn a-reset">
+            Get Started
+        </a>
+    </header>
+    <main>
+        <div class="bg-circle-blur-content-1"></div>
+        <div class="bg-circle-blur-content-2"></div>
+        <div class="bg-circle-blur-content-3"></div>
+        <div class="content d-flex flex-wrap-reverse">
+            <div class="col-12 col-lg-6 p-3 d-flex flex-column justify-content-between">
+                <div>
+                    <div class="display-3 my-5 my-lg-0">
+                        <span class="gradient-text fw-bold">MusicApp</span>, a new way to listen the best of your songs
+                    </div>
+                    <div class="fs-4 mt-3 my-5 my-lg-0 mt-lg-4">
+                        Come enjoy our app with the first month free for new users!
+                    </div>
+                </div>
+                <div class="w-100 d-flex align-items-center justify-content-center my-5 my-lg-0">
+                    <a href="javascript:void(0)" class="call-to-action-btn a-reset">
+                        Try now!
+                    </a>
+                </div>
+            </div>
+            <div class="banner-image d-flex justify-content-center align-items-center col-12 col-lg-6 p-3">
+                <div>
+                    <img src="./src/images/Default_a_woman_with_a_headphones_in_music_vibe_and_with_a_whi_1_18c4c81e-3c7d-4e63-b55e-28978ea8b0a3_0.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div id="partners-swiper" class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Spotify_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Google_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Cotemig_White.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Spotify_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Google_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Spotify_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Google_white.png" alt=""></div>
+                <div class="swiper-slide d-flex align-items-center justify-content-center align-items-center"><img src="./src/images/partners/Cotemig_White.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        const swiper = new Swiper('#partners-swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: true,
+            delay: 3000,
+            slidesPerView: 1.9,
+            centeredSlides: true,
+
+            breakpoints: {
+                1200: {
+                    slidesPerView: 6,
+                },
+                992: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
