@@ -26,9 +26,8 @@ html {
 body {
     background-color: #1c1c1c;
     color: white;
-    width: 100vw !important;
-    min-height: 400vh;
-    padding: 10vh 5vw 5vw 5vw;
+    width: 100% !important;
+    padding: 10vh 0 0 0;
     overflow-x: hidden !important;
 }
 
@@ -54,7 +53,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
     transition: all .5s ease;
 }
@@ -223,6 +222,12 @@ nav ul li:hover,
     opacity: 1;
 }
 
+@keyframes fromTop {
+    0% {
+        
+    }
+}
+
 
 /* Medias */
 
@@ -235,7 +240,7 @@ nav ul li:hover,
         right: 0;
         left: unset;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         flex-direction: column;
         transition: all .4s ease;
         background-color: #1c1c1c;

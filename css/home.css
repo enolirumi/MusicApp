@@ -1,3 +1,8 @@
+
+main, .partners-section, .motivations-section {
+    padding: 0 5vh 0 5vh;
+}
+
 main {
     position: relative;
 }
@@ -135,6 +140,23 @@ main .content .banner-image img {
 
 .partners-section {
     overflow: hidden;
+}
+
+.feedback-forward-swiper>.swiper-wrapper , .feedback-backward-swiper>.swiper-wrapper  {
+    transition-timing-function: linear;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 40%) !important;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+}
+
+.feedback-forward-swiper .swiper-slide, .feedback-backward-swiper .swiper-slide {
+    border: 2px solid white; 
+    height: 100%;
+}
+
+.review-opinion::before, .review-opinion::after {
+    content: '"';
 }
 
 
