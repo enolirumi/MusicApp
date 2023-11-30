@@ -129,6 +129,10 @@ header.scrolled {
     border-radius: 100px;
 }
 
+.ul-nostyle {
+    list-style: none;
+}
+
 header img {
     width: 120px;
 }
@@ -232,9 +236,6 @@ nav ul li:hover,
 /* Medias */
 
 @media screen and (max-width: 992px) {
-    body {
-        padding: 5vw;
-    }
 
     header {
         right: 0;
@@ -278,6 +279,28 @@ nav ul li:hover,
     .call-to-action-btn {
         font-size: 1.3rem;
     }
+}
+
+footer .news-form {
+    background-color: rgb(59, 59, 59);
+    border-radius: 20px;
+}
+
+footer .news-form input:not([type="submit"]) {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 75%;
+}
+
+footer .news-form button[type="submit"] {
+    background-color: #1c1c1c;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 100px;
 }
 
 
